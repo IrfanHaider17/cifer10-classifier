@@ -1,8 +1,16 @@
 import streamlit as st
-import tensorflow as tf
+# import tensorflow as tf
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
+
+try:
+    import tensorflow as tf
+except ImportError:
+    import sys
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "tensorflow==2.16.1"])
+    import tensorflow as tf
 
 # Load the saved model
 model = tf.keras.models.load_model('model.h5')
