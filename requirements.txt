@@ -1,5 +1,5 @@
 streamlit==1.25.0
-tensorflow==2.12.0
-numpy==1.24.3
-pillow==9.5.0
-matplotlib==3.7.1
+tensorflow==2.16.1
+numpy==1.26.4
+pillow==10.3.0  # Newer version with Python 3.12 support
+matplotlib==3.8.2
